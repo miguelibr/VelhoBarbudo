@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #000e11;    
+  --color-secondary: #1c1c1c; 
+  --color-tertiary: #e6e1d8;
+  --color-quaternary: #c78c67;
+
+  --font-primary: "Poppins", sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --transition-default: 0.3s ease;
+}

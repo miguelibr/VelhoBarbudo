@@ -1,0 +1,128 @@
+============================================================
+GUIA DE ESTILOS — VELHO BARBUDO 🧔💈
+============================================================
+
+📁 LOCAL: /docs/guia_estilos_velho_barbudo.txt
+📅 VERSÃO: 1.0
+📄 PROPÓSITO:
+Guia interno para padronização visual e uso das variáveis, espaçamentos, fontes e componentes
+no projeto da barbearia moderna "Velho Barbudo".
+
+============================================================
+🎨 CORES PADRÃO (variables.css)
+============================================================
+
+--color-primary:     #000e11;    /* Fundo principal (header, footer, áreas escuras) */
+--color-secondary:   #1c1c1c;    /* Fundo de contraste / seções alternadas */
+--color-tertiary:    #e6e1d8;    /* Cor clara para texto em fundos escuros */
+--color-quaternary:  #c78c67;    /* Dourado principal — destaques, ícones, bordas */
+
+🟤 Uso prático:
+- Fundo do site e seções: var(--color-primary)
+- Títulos ou destaques: var(--color-quaternary)
+- Textos: var(--color-tertiary)
+- Botões hover: misturar primária com dourado
+
+============================================================
+🔠 FONTES (variables.css)
+============================================================
+
+--font-primary: "Poppins", sans-serif;
+
+Títulos e menus: Poppins SemiBold 600  
+Subtítulos: Poppins Medium 500  
+Texto geral: Poppins Regular 400  
+
+📏 Exemplo de uso:
+h1, h2, h3 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+p, span {
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+============================================================
+📏 ESPAÇAMENTOS E DIMENSÕES (variables.css)
+============================================================
+
+--space-xs: 0.5rem;   /* Espaços pequenos: margens internas, ícones */
+--space-sm: 1rem;     /* Padrão para espaçamento entre textos */
+--space-md: 2rem;     /* Seções médias, cards, grupos */
+--space-lg: 4rem;     /* Separação entre blocos grandes */
+
+🧩 Unidade: REM (responsiva e escalável)
+
+📏 Dica: use sempre spacing relativo em vez de pixels fixos.
+
+============================================================
+🎯 RAIO E TRANSIÇÕES
+============================================================
+
+--radius-sm: 0.25rem;   /* Bordas leves, botões e inputs */
+--radius-md: 0.5rem;    /* Bordas médias, cards */
+--transition-default: 0.3s ease;  /* Animações suaves */
+
+============================================================
+📁 ARQUIVOS CSS E SUAS FUNÇÕES
+============================================================
+
+1️⃣ reset.css  
+→ Limpa estilos padrão dos navegadores.
+
+2️⃣ variables.css  
+→ Define todas as variáveis globais (cores, fontes, espaçamentos).
+
+3️⃣ global.css  
+→ Define estilos base do body, textos, imagens e links.
+
+4️⃣ layout.css  
+→ Estrutura do site (header, seções, grid, footer).
+
+5️⃣ components.css  
+→ Estilos visuais: botões, cards, formulários, menus etc.
+
+6️⃣ responsive.css  
+→ Media queries para responsividade:
+   - 768px (tablet)
+   - 425px (mobile)
+
+7️⃣ main.css  
+→ Arquivo principal que importa todos os outros.
+
+============================================================
+📱 RESPONSIVIDADE
+============================================================
+
+Usar media queries apenas dentro de "responsive.css"
+
+@media (max-width: 768px) { ... }   /* tablets */
+@media (max-width: 425px) { ... }   /* celulares */
+
+Lembre-se: mantenha o design limpo e legível.
+Evite esconder conteúdo em telas pequenas.
+
+============================================================
+🧠 BOAS PRÁTICAS
+============================================================
+
+✔️ Use sempre var(--nome-da-variavel) para manter consistência.
+✔️ Nomeie classes de forma semântica (ex: .section-servicos, .btn-agendar).
+✔️ Evite inline styles no HTML.
+✔️ Mantenha a hierarquia visual com espaçamentos responsivos (rem).
+✔️ Centralize decisões visuais aqui na doc — nada de "inventar moda" 😄
+
+============================================================
+🚀 REFERÊNCIAS FUTURAS
+============================================================
+
+📌 Fonte: Google Fonts — Poppins
+📌 Paleta: preto, cinza escuro, dourado, bege claro
+📌 Tema: Moderno, masculino, elegante, minimalista
+📌 Atualizações: futuras adições de componentes devem seguir este padrão.
+
+============================================================
+FIM DO DOCUMENTO
+============================================================

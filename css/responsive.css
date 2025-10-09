@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  section {
+    padding: var(--space-md);
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

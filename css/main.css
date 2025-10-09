@@ -1,0 +1,46 @@
+/* =========================================================
+   VELHO BARBUDO 
+   Autor: 
+   Descrição: Arquivo principal de estilos (importa todos os módulos)
+   Estrutura baseada em CSS modular e responsivo.
+   ========================================================= */
+
+/* 🔹 1. Reset base — remove estilos padrões dos navegadores */
+@import url("./reset.css");
+
+/* 🔹 2. Variáveis globais — cores, espaçamentos, fontes, etc. */
+@import url("./variables.css");
+
+/* 🔹 3. Estilos globais — body, tipografia, links, imagens */
+@import url("./global.css");
+
+/* 🔹 4. Layout geral — estrutura das seções (header, main, footer) */
+@import url("./layout.css");
+
+/* 🔹 5. Componentes — botões, cards, formulários, menus */
+@import url("./components.css");
+
+/* 🔹 6. Responsividade — ajustes para tablets e celulares */
+@import url("./responsive.css");
+
+/* =========================================================
+   ✅ IMPORTANTE:
+   - A ordem das importações deve ser mantida.
+   - Todas as variáveis (ex: var(--color-primary)) são definidas em variables.css.
+   - Responsividade sempre no final para sobrescrever estilos.
+   ========================================================= */
+
+/* =========================================================
+   🎨 ESTILOS ADICIONAIS GLOBAIS (opcional)
+   Se precisar, pode colocar aqui pequenos ajustes universais.
+   ========================================================= */
+
+/* Exemplo: transição padrão de hover em todos os links e botões */
+a, button {
+  transition: var(--transition-default);
+}
+
+/* Exemplo: animação suave ao rolar a página */
+html {
+  scroll-behavior: smooth;
+}
