@@ -5,19 +5,7 @@ body {
   font-family: var(--font-primary);
   background-color: var(--color-primary);
   color: var(--color-tertiary);
-  line-height: 1.6;
+
 }
 
-h1, h2, h3 {
-  color: var(--color-tertiary);
-  letter-spacing: 0.05em;
-}
 
-a {
-  color: var(--color-quaternary);
-  text-decoration: none;
-  transition: var(--transition-default);
-}
-a:hover {
-  color: var(--color-tertiary);
-}

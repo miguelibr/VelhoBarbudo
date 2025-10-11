@@ -1,46 +1,102 @@
-/* =========================================================
-   VELHO BARBUDO 
-   Autor: 
-   Descrição: Arquivo principal de estilos (importa todos os módulos)
-   Estrutura baseada em CSS modular e responsivo.
-   ========================================================= */
-
-/* 🔹 1. Reset base — remove estilos padrões dos navegadores */
 @import url("./reset.css");
-
-/* 🔹 2. Variáveis globais — cores, espaçamentos, fontes, etc. */
 @import url("./variables.css");
-
-/* 🔹 3. Estilos globais — body, tipografia, links, imagens */
 @import url("./global.css");
-
-/* 🔹 4. Layout geral — estrutura das seções (header, main, footer) */
 @import url("./layout.css");
-
-/* 🔹 5. Componentes — botões, cards, formulários, menus */
 @import url("./components.css");
-
-/* 🔹 6. Responsividade — ajustes para tablets e celulares */
 @import url("./responsive.css");
 
-/* =========================================================
-   ✅ IMPORTANTE:
-   - A ordem das importações deve ser mantida.
-   - Todas as variáveis (ex: var(--color-primary)) são definidas em variables.css.
-   - Responsividade sempre no final para sobrescrever estilos.
-   ========================================================= */
-
-/* =========================================================
-   🎨 ESTILOS ADICIONAIS GLOBAIS (opcional)
-   Se precisar, pode colocar aqui pequenos ajustes universais.
-   ========================================================= */
-
-/* Exemplo: transição padrão de hover em todos os links e botões */
-a, button {
-  transition: var(--transition-default);
+html {
+   scroll-behavior: smooth;
 }
 
-/* Exemplo: animação suave ao rolar a página */
-html {
-  scroll-behavior: smooth;
+/* ======================== HEADER ======================== */
+header {
+   display: flex;
+   background-color: #433A39;
+   padding: 0 17vw;
+}
+
+header .logo {
+   width: 150px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social img {
+  height: 22px;
+  width: auto;
+}
+
+header a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.3rem;
+}
+
+
+
+
+/* ======================== INICIO ======================== */
+#inicio {
+   position: relative;
+   width: 100%;
+   background-color: #433A39;
+
+}
+
+#inicio img {
+   display: block;
+   margin: 0 auto;
+   max-width: 100%;
+   height: auto;
+   position: relative;
+   z-index: 1;
+   mask-image: linear-gradient(to right,
+         transparent 0%,
+         #433A39 40%,
+         #433A39 60%,
+         transparent 100%);
+   -webkit-mask-image: linear-gradient(to right,
+         transparent 0%,
+         #433A39 40%,
+         #433A39 60%,
+         transparent 100%);
+}
+
+
+#inicio h1 {
+   position: absolute;
+   bottom: 8rem;
+   left: 30rem;
+   color: #fff;
+   font-size: 4rem;
+   z-index: 3;
+   line-height: 1;
+}
+
+.linha-branca {
+  color: #e6e1d8;
+}
+
+.linha-preta {
+  color: #c78c67;
 }
