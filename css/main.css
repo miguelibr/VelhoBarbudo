@@ -4,6 +4,8 @@
 @import url("./layout.css");
 @import url("./components.css");
 @import url("./responsive.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 html {
    scroll-behavior: smooth;
@@ -12,58 +14,60 @@ html {
 /* ======================== HEADER ======================== */
 header {
    display: flex;
-   background-color: #433A39;
-   padding: 0 17vw;
+   background-color: #1c1c1c;
+   padding: 0 20%
 }
 
 header .logo {
-   width: 150px;
+   width: 5vw;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
 }
 
 .menu {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+   display: flex;
+   gap: 2vw;
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
 .social {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+   display: flex;
+   gap: 1vw;
+   align-items: center;
+   padding-left: 1vw;
 }
 
 .social img {
-  height: 22px;
-  width: auto;
+   width: 1vw;
 }
 
-header a{
+header a {
    text-decoration: none;
-   color: #fff;
-   font-size: 1.3rem;
+   color: #e6e1d8;
+   font-size: clamp(1rem, 1.2vw, 1.3rem);
 }
 
-
+header a:hover {
+   color: #c78c67;
+}
 
 
 /* ======================== INICIO ======================== */
-#inicio {
+.inicio {
    position: relative;
    width: 100%;
-   background-color: #433A39;
+   background-color: #1c1c1c;
 
 }
 
-#inicio img {
+.inicio img {
    display: block;
    margin: 0 auto;
    max-width: 100%;
@@ -72,31 +76,105 @@ header a{
    z-index: 1;
    mask-image: linear-gradient(to right,
          transparent 0%,
-         #433A39 40%,
-         #433A39 60%,
+         #1c1c1c 40%,
+         #1c1c1c 60%,
          transparent 100%);
    -webkit-mask-image: linear-gradient(to right,
          transparent 0%,
-         #433A39 40%,
-         #433A39 60%,
+         #1c1c1c 40%,
+         #1c1c1c 60%,
          transparent 100%);
 }
 
-
-#inicio h1 {
+.inicio h1 {
    position: absolute;
-   bottom: 8rem;
-   left: 30rem;
+   bottom: 5vw;
+   left: 20vw;
    color: #fff;
-   font-size: 4rem;
+   font-size: clamp(2rem, 5vw, 4rem);
    z-index: 3;
    line-height: 1;
 }
 
 .linha-branca {
-  color: #e6e1d8;
+   color: #e6e1d8;
 }
 
 .linha-preta {
-  color: #c78c67;
+   color: #c78c67;
 }
+
+.inicio hr {
+   border: none;
+   height: 5px;
+   background-color: #1c1c1c; /* cor da linha */
+  
+}
+
+/* ======================== SOBRE ======================== */
+
+.sobre {
+   padding: 0 20%;
+}
+
+.div1{
+   display: flex;
+   align-items: center;
+}
+
+.paragrafo1{
+   width: 50%;
+   background-color: #e6e1d8;;
+   padding: 5%;
+}
+
+.paragrafo1 p{
+   color: #433A39; 
+   font-size: 0.8vw;
+}
+
+.frases{
+   width: 50%;
+   background-color: #1c1c1c;
+   padding-left: 5%;
+   font-size: 2vw;
+   line-height: 0.85;
+   font-family: 'Oswald';
+   font-weight: 800; 
+   letter-spacing: -0.08em;
+   padding-top: 7%;
+   padding-bottom: 5%;
+}
+
+.linha1 {
+   color: #e6e1d8;
+}
+
+.linha2 {
+   color: #c78c67;
+}
+
+.div2{
+   display: flex;
+   align-items: center;
+}
+
+.pilar{
+   width: 50;
+}
+.pilar img{
+   width: 50%
+}
+
+.paragrafo2{
+   padding-top: 7%;
+   width: 50%;
+}
+
+.paragrafo2 p{
+   color: #e6e1d8; 
+   font-size: 0.8vw;
+}
+
+
+
